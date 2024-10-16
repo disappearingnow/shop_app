@@ -3,7 +3,7 @@ import { AuthContext } from "../contexts";
 import { UserType } from "../interfaces";
 
 
-export default function ThemeContextProvider({
+export function ThemeContextProvider({
   children,
 }: {
   children: ReactNode;
