@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "export": "./index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json && node index.js",
     "start": "node index.js"

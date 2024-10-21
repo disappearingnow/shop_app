@@ -1,18 +1,24 @@
 // Import the framework and instantiate it
 import Fastify from "fastify";
+import { productsRoutes } from "./routes/index.js";
 const server = Fastify();
 
 const PORT = 3000;
 
-// Declare a route
+server.register(productsRoutes);
+
+/* 
 server.get("/", async function handler(request, reply) {
   return { hello: "world" };
 });
+ */
 
+/* 
 server.post("/login", async function handler(request, replay) {
   console.log(request.body);
   return { route: "login" };
 });
+ */
 
 // Run the server!
 try {
