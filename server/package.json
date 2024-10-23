@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "export": "./index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json && node index.js",
+    "build": "tsc && node ./dist/index.js",
     "start": "node index.js"
   },
   "keywords": [],
